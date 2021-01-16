@@ -10,8 +10,6 @@
 		BD01D9FF5DCD8C234FA7FA5C /* Pods_CollectionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1E0996324F82B4C883E6AE /* Pods_CollectionApp.framework */; };
 		FE0D957325AF792200DB1214 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D957225AF792200DB1214 /* CollectionViewController.swift */; };
 		FE0D957625B057DC00DB1214 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D957525B057DC00DB1214 /* PhotoViewController.swift */; };
-		FE0D957A25B066F500DB1214 /* ThumbnailsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D957925B066F500DB1214 /* ThumbnailsCollectionView.swift */; };
-		FE0D957D25B0670F00DB1214 /* PreviewCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D957C25B0670F00DB1214 /* PreviewCollectionView.swift */; };
 		FE2F18E725AF714A009C8AF1 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2F18E625AF714A009C8AF1 /* CollectionCell.swift */; };
 		FE91FF9C25AE5F8700E54A51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91FF9B25AE5F8700E54A51 /* AppDelegate.swift */; };
 		FE91FF9E25AE5F8700E54A51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91FF9D25AE5F8700E54A51 /* SceneDelegate.swift */; };
@@ -26,8 +24,6 @@
 		F01BFEAFBFEF3764CA808F4F /* Pods-CollectionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionApp.debug.xcconfig"; path = "Target Support Files/Pods-CollectionApp/Pods-CollectionApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FE0D957225AF792200DB1214 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FE0D957525B057DC00DB1214 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
-		FE0D957925B066F500DB1214 /* ThumbnailsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailsCollectionView.swift; sourceTree = "<group>"; };
-		FE0D957C25B0670F00DB1214 /* PreviewCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCollectionView.swift; sourceTree = "<group>"; };
 		FE2F18E625AF714A009C8AF1 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		FE91FF9825AE5F8700E54A51 /* CollectionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE91FF9B25AE5F8700E54A51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,8 +93,6 @@
 				FE91FFA425AE5F8700E54A51 /* Assets.xcassets */,
 				FE91FFA625AE5F8700E54A51 /* LaunchScreen.storyboard */,
 				FE91FFA925AE5F8700E54A51 /* Info.plist */,
-				FE0D957925B066F500DB1214 /* ThumbnailsCollectionView.swift */,
-				FE0D957C25B0670F00DB1214 /* PreviewCollectionView.swift */,
 			);
 			path = CollectionApp;
 			sourceTree = "<group>";
@@ -218,8 +212,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE0D957325AF792200DB1214 /* CollectionViewController.swift in Sources */,
-				FE0D957D25B0670F00DB1214 /* PreviewCollectionView.swift in Sources */,
-				FE0D957A25B066F500DB1214 /* ThumbnailsCollectionView.swift in Sources */,
 				FE91FF9C25AE5F8700E54A51 /* AppDelegate.swift in Sources */,
 				FE91FF9E25AE5F8700E54A51 /* SceneDelegate.swift in Sources */,
 				FE2F18E725AF714A009C8AF1 /* CollectionCell.swift in Sources */,

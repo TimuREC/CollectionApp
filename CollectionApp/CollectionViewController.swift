@@ -40,8 +40,6 @@ class CollectionViewController: UICollectionViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
 		if segue.identifier == "openPhotoView", let sender = sender as? CollectionCell {
 			let destVC = segue.destination as! PhotoViewController
 			destVC.dataSourceVC = self
@@ -66,7 +64,6 @@ class CollectionViewController: UICollectionViewController {
     
         return cell
     }
-
 }
 
 extension CollectionViewController: UICollectionViewDelegateFlowLayout {
@@ -88,5 +85,4 @@ extension CollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return insetsSize.left
     }
-    
 }

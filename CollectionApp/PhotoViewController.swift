@@ -13,8 +13,8 @@ class PhotoViewController: UIViewController {
 	@IBOutlet weak var navigatonBar: UINavigationBar!
 	@IBOutlet weak var toolbar: UIToolbar!
 	
-	@IBOutlet weak var previewCollectionView: PreviewCollectionView!
-	@IBOutlet weak var thumbnailsCollectionView: ThumbnailsCollectionView!
+	@IBOutlet weak var previewCollectionView: UICollectionView!
+	@IBOutlet weak var thumbnailsCollectionView: UICollectionView!
 	
 	weak var dataSourceVC: CollectionViewController?
 	var index: IndexPath?
@@ -26,8 +26,6 @@ class PhotoViewController: UIViewController {
 		thumbnailsCollectionView.dataSource = dataSourceVC
 		previewCollectionView.delegate = self
 		thumbnailsCollectionView.delegate = self
-		
-        // Do any additional setup after loading the view.
     }
 	
 	override func viewDidLayoutSubviews() {
@@ -96,13 +94,14 @@ extension PhotoViewController: UICollectionViewDelegateFlowLayout {
 	}
 	
 	func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-		DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-			print(self.previewCollectionView.indexPathsForVisibleItems)
-			let index = self.previewCollectionView.indexPathsForVisibleItems[0]
-			self.thumbnailsCollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+		if scrollView == previewCollectionView {
+			DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+				print(self.previewCollectionView.indexPathsForVisibleItems)
+				let index = self.previewCollectionView.indexPathsForVisibleItems[0]
+				self.thumbnailsCollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+			}
 		}
 	}
-	
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		let width = UIScreen.main.bounds.width
